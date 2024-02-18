@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;700&family=Noto+Sans+KR:wght@100..900&display=swap');
+$url: "../images/";
+$primary : #D9232E;
+$mg : 24px;
+$base : calc(100vw - $mg * 2);
+@import 'init','reset','mixin', 'header' , 'intro';
+
+ 
+
+.splash {
+    background-color:$surface;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    img {
+        width:50%;
+    }
+}
+
+input::placeholder {
+    color:map-get($text, placeholder);
+}
+
+body {
+    background-color:$surface;
+    color:map-get($text, default);
+}
+
+.exetention-container {
+    background-color:nth($mono, 2);
+}

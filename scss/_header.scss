@@ -1,0 +1,27 @@
+.header{
+    position:fixed;
+    left:0;right:0; // width:100vw;
+    top:0;
+    height: 44px;
+    padding:0 $mg; 
+    @include flex;
+  
+    .logo{
+        a{
+            background:url($url+'Netflix_logo.svg')no-repeat center center/contain; 
+            height: 19px;
+            display: block;
+        }
+        width: 70px;
+        span{
+            @include blind;
+
+        }
+    }
+        ul{
+            @include flex($g:9px);
+        }
+      
+   
+   
+}

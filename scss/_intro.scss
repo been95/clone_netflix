@@ -1,0 +1,39 @@
+ 
+.intro-slide{
+    
+    .slide-list{
+        h2{
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom:50px;
+        } 
+        
+        li { 
+            text-align:center;
+            .bg {
+                height:490px;
+            }
+            &:first-child {
+                .bg {
+                    background:url(../images/intro_1_bg.png) no-repeat center top / 100% auto;
+                }
+            }
+           
+        }
+    }
+}
+
+.btn-next{
+    width:$base;
+    height: 47px;
+    background-color: $primary; 
+    bottom: 34px; 
+    border-radius: 3px;
+    position:fixed;
+    @include centerH;
+    @include flex(center);  
+}
+
+@debug calc(100% - $mg * 2);
+
+

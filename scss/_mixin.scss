@@ -1,0 +1,27 @@
+@mixin blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+  }
+
+@mixin flex($j:space-between,$a:center,$g:null,$w:null) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    gap:$g;
+    flex-wrap:$w;
+}
+
+@mixin centerH($h:true) {
+    @if $h {
+        left: 50%;
+        transform: translateX(-50%);
+    } @else {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+ 
